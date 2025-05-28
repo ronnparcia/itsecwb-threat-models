@@ -37,50 +37,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "User sends user credentials",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "User sends user credentials"
-            ],
-            "id": "08e0a809-166b-43b4-bbd5-4af7bb110f03",
-            "source": {
-              "x": 150,
-              "y": 370
-            },
-            "target": {
-              "x": 390,
-              "y": 370
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Insert feedback comments",
               "description": "",
               "outOfScope": false,
@@ -597,6 +553,50 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User sends user credentials",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "User sends user credentials"
+            ],
+            "id": "08e0a809-166b-43b4-bbd5-4af7bb110f03",
+            "source": {
+              "x": 140,
+              "y": 370
+            },
+            "target": {
+              "x": 390,
+              "y": 370
+            }
+          },
+          {
             "position": {
               "x": 400,
               "y": 350
@@ -617,6 +617,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -700,7 +701,6 @@
               ]
             },
             "id": "93c80781-b19b-4c9c-ae42-b8c9e9e35415",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Web\nApplication",
@@ -736,6 +736,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -819,7 +820,6 @@
               ]
             },
             "id": "ff40c642-e022-41cb-8e53-d2d0c919a5b0",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "Browser\nClient",
@@ -855,6 +855,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -938,7 +939,6 @@
               ]
             },
             "id": "49b81634-2be4-43ea-af7d-a79b196d3fee",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "SQL\nDatabase",
@@ -975,6 +975,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1058,7 +1059,6 @@
               ]
             },
             "id": "570f89a7-2b14-49ad-86d2-c935631beac1",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "Authorization\nProvider",
@@ -1097,6 +1097,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1180,7 +1181,6 @@
               ]
             },
             "id": "eb0d0a5c-e5c6-49ef-aadb-c99a1979fa07",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "LDAP",
