@@ -597,6 +597,60 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "test",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "test"
+            ],
+            "id": "30e0a628-f019-4a69-af5f-0306fe9a3f2e",
+            "source": {
+              "cell": "ff40c642-e022-41cb-8e53-d2d0c919a5b0",
+              "port": "2aed2be5-aca6-4d34-ae40-7bddf7268d55"
+            },
+            "target": {
+              "cell": "93c80781-b19b-4c9c-ae42-b8c9e9e35415",
+              "port": "8a9d6354-a878-4236-a415-1f92cd18d039"
+            },
+            "vertices": [
+              {
+                "x": 180,
+                "y": 540
+              },
+              {
+                "x": 370,
+                "y": 540
+              }
+            ]
+          },
+          {
             "position": {
               "x": 400,
               "y": 350
