@@ -1000,7 +1000,7 @@
       },
       {
         "id": 6,
-        "title": "Diagram 1",
+        "title": "Customer Places an Order",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -1989,7 +1989,7 @@
       },
       {
         "id": 7,
-        "title": "New STRIDE diagram",
+        "title": "Diagram 2",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
