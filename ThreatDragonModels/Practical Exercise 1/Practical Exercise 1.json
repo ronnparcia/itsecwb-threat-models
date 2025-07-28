@@ -1,0 +1,16 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Practical Exercise 1",
+    "owner": "John Ronn Parcia",
+    "description": "The Brew & Bloom Coffee Co. ordering web application is a digital platform designed to enhance the customer experience and streamline internal operations of the coffee shop. The architecture is composed of four key components: the Client Side (Frontend), the Backend Web Application Server, the Database Server, and an integrated Third-Party Payment Service.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "Katrina Solomon",
+    "threatTop": 0
+  }
+}
