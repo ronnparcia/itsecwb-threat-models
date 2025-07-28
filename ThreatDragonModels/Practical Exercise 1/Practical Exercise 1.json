@@ -438,19 +438,112 @@
                   "new": false,
                   "number": 22,
                   "score": ""
+                },
+                {
+                  "id": "97b7bd1c-5869-41ea-817a-cc68c335c354",
+                  "title": "T-012 Application Code and Configuration Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Exposure of source code, server configurations, environment variables, or API keys.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                },
+                {
+                  "id": "93172913-adbe-4a54-bb4e-2123323bc730",
+                  "title": "T-013 Sales Data Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to sales reports or underlying aggregated sales data.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                },
+                {
+                  "id": "806b0680-d679-4ca8-b320-9864c46ea127",
+                  "title": "T-014 Web Application Server DoS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker could flood the Web Application Server with excessive requests, making it unavailable.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                },
+                {
+                  "id": "64b99161-d4d5-4c75-9f4a-4aea7d3122a8",
+                  "title": "T-015 MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                },
+                {
+                  "id": "d8cbc536-4a87-4f34-88dc-7e76697bb852",
+                  "title": "T-016 Customer to Staff Privilege Escalation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A customer could exploit a vulnerability to gain unauthorized access to Barista, Manager, or Administrator functionalities.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                },
+                {
+                  "id": "2b2ec592-3b6b-43ac-9f6c-d90552897c64",
+                  "title": "T-017 Barista/Manager to Administrator Privilege Escalation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A Barista or Manager could exploit a vulnerability to gain Administrator privileges.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
+                },
+                {
+                  "id": "216765cd-90b4-4845-8e4c-6ff1738baefb",
+                  "title": "T-018 Horizontal Privilege Escalation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Gaining unauthorized access to another user's account within the same privilege level.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 32,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 3,
                 "tampering": 4,
                 "repudiation": 2,
-                "informationDisclosure": 3,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 0
+                "informationDisclosure": 5,
+                "denialOfService": 2,
+                "elevationOfPrivilege": 3
               }
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
                 "boundary",
                 "button-remove"
               ],
@@ -671,13 +764,39 @@
                   "new": false,
                   "number": 23,
                   "score": ""
+                },
+                {
+                  "id": "5db44a65-e848-4ae1-aadb-3d216b61485f",
+                  "title": "T-013 Sales Data Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to sales reports or underlying aggregated sales data.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
+                },
+                {
+                  "id": "581fe7db-2925-4a60-8084-b5939890c22e",
+                  "title": "T-015 MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 4,
                 "repudiation": 2,
-                "informationDisclosure": 2,
-                "denialOfService": 0
+                "informationDisclosure": 3,
+                "denialOfService": 1
               }
             }
           },
@@ -807,6 +926,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Katrina Solomon",
-    "threatTop": 23
+    "threatTop": 32
   }
 }
