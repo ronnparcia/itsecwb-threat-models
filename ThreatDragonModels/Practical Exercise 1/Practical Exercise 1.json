@@ -373,16 +373,88 @@
                   "new": false,
                   "number": 12,
                   "score": ""
+                },
+                {
+                  "id": "82d1c898-d46e-4904-8f86-2880fb1b07c8",
+                  "title": "T-007 Application Code/Configuration Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Malicious modification of the application's source code, server configurations, or environment variables could introduce backdoors or disable security features.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                },
+                {
+                  "id": "779904ab-3acb-4dd0-ba64-29e80151552c",
+                  "title": "T-008 Fraudulent Order Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A customer could deny placing an order if insufficient logging and non- repudiation controls are in place.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "6427c216-593c-46a8-aa99-c11342ca8d5a",
+                  "title": "T-009 Staff Action Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Staff members (Barista, Manager, Administrator) could deny performing actions if audit logs are insufficient, not immutable, or can be tampered with.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                },
+                {
+                  "id": "e38fc589-fed9-4675-9391-2e4c7b19eec9",
+                  "title": "T-010 Customer PII Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to customer names, contact details, delivery addresses, and order history.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                },
+                {
+                  "id": "2dfac0c8-71c2-4acb-be69-e88b9e556d4a",
+                  "title": "T-011 Staff Credential Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members due to insecure storage or unencrypted transmission.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 3,
-                "tampering": 3,
-                "repudiation": 0,
-                "informationDisclosure": 0,
+                "tampering": 4,
+                "repudiation": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -536,19 +608,6 @@
                   "score": ""
                 },
                 {
-                  "id": "ca54a896-d7a3-44c3-9540-d1f42c60984b",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Repudiation",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 13,
-                  "score": ""
-                },
-                {
                   "id": "c4d79d0b-2a86-4814-bc90-2cf10b7e6ff1",
                   "title": "T-006 Sales Report Tampering",
                   "status": "Open",
@@ -560,12 +619,64 @@
                   "new": false,
                   "number": 14,
                   "score": ""
+                },
+                {
+                  "id": "cc9e87aa-754c-458f-96ab-373177e883db",
+                  "title": "T-008 Fraudulent Order Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A customer could deny placing an order if insufficient logging and non- repudiation controls are in place.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                },
+                {
+                  "id": "fdc6284d-6e58-49d8-9757-a15d95c62291",
+                  "title": "T-009 Staff Action Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Staff members (Barista, Manager, Administrator) could deny performing actions if audit logs are insufficient, not immutable, or can be tampered with.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                },
+                {
+                  "id": "75473cac-3003-427f-b005-be788d736d58",
+                  "title": "T-010 Customer PII Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to customer names, contact details, delivery addresses, and order history.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                },
+                {
+                  "id": "24deca0c-9a07-4044-bbd3-1cda03db02a8",
+                  "title": "T-011 Staff Credential Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members due to insecure storage or unencrypted transmission.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 3,
-                "repudiation": 0,
-                "informationDisclosure": 0,
+                "tampering": 4,
+                "repudiation": 2,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             }
@@ -696,6 +807,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Katrina Solomon",
-    "threatTop": 14
+    "threatTop": 23
   }
 }
