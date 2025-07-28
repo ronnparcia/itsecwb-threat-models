@@ -19,6 +19,90 @@
         "cells": [
           {
             "position": {
+              "x": 433.9999999999977,
+              "y": 65.00000000000489
+            },
+            "size": {
+              "width": 190,
+              "height": 200
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "817ae23c-1a1c-4553-ace5-c8377f97a204",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 55.999999999999716,
+              "y": 60.00000000000031
+            },
+            "size": {
+              "width": 180,
+              "height": 210
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "80245ad3-f222-4ecf-9e76-5e1c7e85135e",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 909,
+              "y": 60.0000000000004
+            },
+            "size": {
+              "width": 160,
+              "height": 200
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "db305595-49fd-4e64-b8de-f1604002f27c",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 420,
+              "y": 400.0000000000001
+            },
+            "size": {
+              "width": 220,
+              "height": 130
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "fb34b956-008c-450a-b04b-2ec2419c9131",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 70,
               "y": 120.00000000000011
             },
@@ -38,6 +122,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +206,6 @@
               ]
             },
             "id": "bbce572d-1cb2-4b2d-8e86-b352ce5f95c5",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Client Side Frontend",
@@ -199,6 +283,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -282,7 +367,6 @@
               ]
             },
             "id": "e2118da5-e14a-4697-b34e-34942166d14d",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web Server \nBackend",
@@ -544,7 +628,7 @@
           {
             "position": {
               "x": 452,
-              "y": 438
+              "y": 418
             },
             "size": {
               "width": 150,
@@ -567,6 +651,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -650,7 +735,6 @@
               ]
             },
             "id": "1c22cfe1-b627-4917-8f68-115006fec199",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "Database",
@@ -789,13 +873,6 @@
                 "informationDisclosure": 3,
                 "denialOfService": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -819,6 +896,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -902,7 +980,6 @@
               ]
             },
             "id": "1418e59b-2e8e-49e6-a35d-dcf0c0a0092e",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Third-Party\nPayment\nService",
